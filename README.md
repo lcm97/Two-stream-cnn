@@ -13,8 +13,10 @@ This project utilizes the aggregated cpmputational power of already connected Io
 ## Quick Start:
 ### Multiple devices:
   On all of your device except the initial sender, run the node.
+  
   python node.py
   Start the data sender. You should be able to see console log.
+  
   python initial.py
   
 ### Single device:
