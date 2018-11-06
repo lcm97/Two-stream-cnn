@@ -1,6 +1,6 @@
 """
     This module is called initial because it initializes all request
-    from this node. It will simulates a (224, 224, 3) size image data
+    from this node. It will simulates image and opatical-flow data
     packet and send to the first node in the distributed system and wait
     for the response from the last layer.
 """
