@@ -9,19 +9,29 @@ This project utilizes the aggregated cpmputational power of already connected Io
   On TX2, please use NVIDIA JetPack 3.3 to install CUDA and cuDNN,then utilize pip to install Keras with  a Tensorflow-gpu backend,this installation procedure is similar on Raspberry PI as well.
 ### Multiple devices:
   For Raspberry PIs, apart from tensorflow and keras,please install Apache Avro through pip for managing remote procedure calls (RPC). Moreover, make sure ports number 12345 and 9999 are open on all Raspberry PIs,and edit the resource/ip files to get all of the IP addresses of Raspberry PIs in your network.
+### Installation:
+* pip install --upgrade tensorflow
+
+* sudo apt-get python-numpy python-scipy python-h5py python-pillow
+
+* pip install scikit-learn
+
+* pip install keras
+
   
 ## Quick Start:
 ### Multiple devices:
   On all of your device except the initial sender, run the node.
   
   python node.py
+  
   Start the data sender. You should be able to see console log.
   
   python initial.py
   
 ### Single device:
  
-  Execute predict file to run model inference.
+  Go to the single-device directory, the predict.py script in each model executes 50 inferences. Then, it reports the average time per inference. Execute predict file to run model inference.
   
   python predict.py
  
